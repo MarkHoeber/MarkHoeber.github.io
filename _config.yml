@@ -6,7 +6,7 @@
 name: Mark Hoeber!
 
 # Short bio or description (displayed in the header)
-description: Jekyll template for Tools and Technology Class
+description: Jekyll template for Tools and Technology for Technical Writers
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/18296504
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: markhoeber/markhoeber.github.io
   instagram:
-  linkedin:
+  linkedin: markhoeber
   pinterest:
   rss: 1
   twitter:
