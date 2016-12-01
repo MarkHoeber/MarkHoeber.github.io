@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  //max-width: 940px;
   padding: 0 10px;
   width: 100%;
 }
@@ -150,15 +150,28 @@ img {
 // .masthead
 //
 
+
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: $background;
+  background-color: $white;
+}
 
+.container {
+  margin: 0 auto;
+  //max-width: 940px;
+  padding: 0 0px;
+  width: 100%;
 
 }
 
 .masthead {
-  padding: 20px 0 0 0;
+  //padding: 30px 0px 30px 0;
+  width: 100%;
+  //max-width: 940px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 20px;
   
 
   @include mobile {
@@ -186,7 +199,7 @@ img {
 
 .site-info {
   float: center;
-  color: $white;
+  color: $darkerGray;
 
   @include mobile {
     float: none;
@@ -198,21 +211,22 @@ img {
 .site-name {
   float: left;
   margin: 0;
-  color: $white;
+  color: $darkerGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 32px;
-  letter-spacing: 1px;
-  vertical-align: middle;
+  letter-spacing: 1;
+  
   a {
     &:hover, &:active {
-      color: $white;
+      color: $darkerGray;
     }
   }
 
   @include mobile {
     float: none;
+    color: $darkerGray;
     font-size: 24px;
     margin-top: 9px;
     display: block;
@@ -220,22 +234,46 @@ img {
 
 }
 
+
+.site-banner {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $background;
+  width: 100%;
+  
+  
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  margin: 0 0 0 0;
+  color: $white;
+  font-size: 20px;
+  font-family: $helveticaNeue;
+  padding-left: 20%;
+  padding-right: 20%;
 
   @include mobile {
     margin: 3px 0;
+    text-align: center;
+
   }
 }
 
 nav {
   float: right;
-  margin-top: 10px; // @TODO: Vertically middle align
+  //margin-top: 10px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-  line-height: 54.4px;
+  line-height: 69px;
+  vertical-align: bottom;
+
 
 
   @include mobile {
@@ -247,20 +285,22 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $white;
+    color: $darkerGray;
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
+    vertical-align: bottom;
+
 
     &:hover, &:active {
-      color: $white;
+      //color: $white;
       text-decoration: underline;
     }
 
     @include mobile {
       margin: 0 10px;
-      color: $white;
-      display: block;
+      color: $darkerGray;
+      
 
     }
   }
