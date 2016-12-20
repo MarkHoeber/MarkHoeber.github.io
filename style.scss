@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $helveticaNeue;
   color: $darkGray;
 }
 
@@ -306,10 +306,29 @@ nav {
   }
 }
 
-//
-// .main
-//
 
+#main {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.home {
+
+  align: center;
+  font-size: 30pt;
+
+}
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
