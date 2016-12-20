@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+  font-weight: normal;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -254,10 +254,11 @@ img {
 .site-description {
   margin: 0 0 0 0;
   color: $white;
-  font-size: 20px;
+  font-size: 21px;
   font-family: $helveticaNeue;
   padding-left: 20%;
   padding-right: 20%;
+  font-weight: lighter;
 
   @include mobile {
     margin: 3px 0;
@@ -299,36 +300,50 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $darkerGray;
-      
+      color: $darkerGray;      
 
     }
   }
 }
 
-
 #main {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
-  
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home {
-
-  align: center;
-  font-size: 30pt;
-
+  text-align: center;
+  font-family: $helveticaNeue;
+  font-weight: normal;
+  padding-left: 20%;
+  padding-right: 20%;
 }
+
+.home section  {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home section article {
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+#initial {
+  
+  margin-left: 60pt;
+  margin-right: 60pt;
+}
+
+.home section article p {
+  font-weight: 100;
+  line-height: 30px;
+  font-size: 21px;
+}
+
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
