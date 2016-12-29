@@ -156,22 +156,23 @@ img {
   background-color: $white;
 }
 
-.container {
+.wrapper-masthead .container {
   margin: 0 auto;
   //max-width: 940px;
   padding: 0 0px;
   width: 100%;
+  position: fixed;
+  top: 0;
 
 }
 
 .masthead {
-  //padding: 30px 0px 30px 0;
+  
   width: 100%;
-  //max-width: 940px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10px;
+  background-color: $white;
   
 
   @include mobile {
@@ -237,8 +238,8 @@ img {
 
 .site-banner {
   display: block;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: $background;
   width: 100%;
   
@@ -254,10 +255,10 @@ img {
 .site-description {
   margin: 0 0 0 0;
   color: $white;
-  font-size: 21px;
+  font-size: 24px;
   font-family: $helveticaNeue;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   font-weight: lighter;
 
   @include mobile {
@@ -309,14 +310,15 @@ nav {
 #main {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 160pt;
 }
 
 .home {
   text-align: center;
   font-family: $helveticaNeue;
   font-weight: normal;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .home section  {
@@ -329,18 +331,37 @@ nav {
   margin-left: auto;
   margin-right: auto;
   font-weight: 300;
+  text-align: left;
 }
 
-#initial {
+.icon {
+    float: left;
+}
+
+.divider {
+  padding-top: 20px;
+}
+.divider hr {
+  width: 20%;
+}
+
+.home section article header {
+  padding-left: 60pt;
+}
+
+#initial header, #initial p {
   
-  margin-left: 60pt;
-  margin-right: 60pt;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-left: 0pt;
 }
 
 .home section article p {
   font-weight: 100;
   line-height: 30px;
-  font-size: 21px;
+  font-size: 18px;
+  padding-left: 60pt;
 }
 
 
